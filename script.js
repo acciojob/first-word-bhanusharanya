@@ -4,15 +4,13 @@ function firstWord(s) {
     return '';
   }
 
-  // Find the index of the first space
   const firstSpaceIndex = s.indexOf(' ');
 
-  // If there is no space, return the entire string
+  // If there are no spaces, return the entire string
   if (firstSpaceIndex === -1) {
     return s;
   }
 
-  // Return the substring from the start to the first space
   return s.substring(0, firstSpaceIndex);
 }
 
